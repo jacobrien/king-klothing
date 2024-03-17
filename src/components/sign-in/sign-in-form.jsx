@@ -56,19 +56,23 @@ function SignInForm() {
       <form onSubmit={() => handleSubmit}>
         <FormInput
           label="Email"
-          type="email"
-          required
-          onChange={handleChange}
-          name="email"
-          value={email}
+          options={{
+            type: "email",
+            required: true,
+            onChange: handleChange,
+            name: "email",
+            value: email,
+          }}
         />
         <FormInput
           label="Password"
-          type="password"
-          required
-          onChange={handleChange}
-          name="password"
-          value={password}
+          options={{
+            type: "password",
+            required: true,
+            onChange: handleChange,
+            name: "password",
+            value: password,
+          }}
         />
 
         <div className="buttons-container">
