@@ -1,17 +1,18 @@
-import { useState } from "react";
-import "./sign-up-form.scss";
+import { useState } from 'react';
 import {
   createAuthUserWithEmailAndPassword,
   createUserDocFromAuth,
-} from "../../utils/firebase/firebase.utils";
-import FormInput from "../form-input/form-input";
-import Button from "../button/button";
+} from '../../utils/firebase/firebase.utils';
+import FormInput from '../form-input/form-input';
+import Button from '../button/button';
+
+import './sign-up-form.scss';
 
 const defaultFormFields = {
-  displayName: "",
-  email: "",
-  password: "",
-  confirmPassword: "",
+  displayName: '',
+  email: '',
+  password: '',
+  confirmPassword: '',
 };
 
 function SignUpForm() {
@@ -31,7 +32,7 @@ function SignUpForm() {
     event.preventDefault();
 
     if (password !== confirmPassword) {
-      alert("passwords do not match");
+      alert('passwords do not match');
       return;
     }
 
@@ -43,10 +44,10 @@ function SignUpForm() {
       await createUserDocFromAuth(user, { displayName });
       resetFormFields();
     } catch (err) {
-      if (err.code === "auth/email-already-in-use") {
-        alert("Email already exists");
+      if (err.code === 'auth/email-already-in-use') {
+        alert('Email already exists');
       }
-      console.log("user signup encountered an error", err);
+      console.log('user signup encountered an error', err);
     }
   };
 
@@ -58,40 +59,40 @@ function SignUpForm() {
         <FormInput
           label="Display Name"
           options={{
-            type: "text",
+            type: 'text',
             required: true,
             onChange: handleChange,
-            name: "displayName",
+            name: 'displayName',
             value: displayName,
           }}
         />
         <FormInput
           label="Email"
           options={{
-            type: "email",
+            type: 'email',
             required: true,
             onChange: handleChange,
-            name: "email",
+            name: 'email',
             value: email,
           }}
         />
         <FormInput
           label="Password"
           options={{
-            type: "password",
+            type: 'password',
             required: true,
             onChange: handleChange,
-            name: "password",
+            name: 'password',
             value: password,
           }}
         />
         <FormInput
           label="Confirm Password"
           options={{
-            type: "password",
+            type: 'password',
             required: true,
             onChange: handleChange,
-            name: "confirmPassword",
+            name: 'confirmPassword',
             value: confirmPassword,
           }}
         />

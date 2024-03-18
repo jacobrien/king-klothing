@@ -21,7 +21,6 @@ const Navigation = () => {
         <Link className="logo-container" to="/">
           <CrwLogo className="logo" />
         </Link>
-        {/* <div className="nav-title">King Klothing</div> */}
         <div className="nav-links-container">
           <Link className="nav-link" to="/shop">
             SHOP
