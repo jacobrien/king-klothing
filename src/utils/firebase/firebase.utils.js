@@ -16,8 +16,8 @@ import {
   setDoc,
   collection,
   writeBatch,
-  query, 
-  getDocs
+  query,
+  getDocs,
 } from 'firebase/firestore';
 
 const firebaseConfig = {
@@ -30,7 +30,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const firebaseApp = initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);
 
 const provider = new GoogleAuthProvider();
 provider.setCustomParameters({
@@ -66,10 +66,10 @@ export const getCategoriesAndDocs = async () => {
     acc[title.toLowerCase()] = items;
 
     return acc;
-  }, {})
+  }, {});
 
   return categoryMap;
-}
+};
 
 export const createUserDocFromAuth = async (userAuth, additionalInfo = {}) => {
   if (!userAuth) return;
