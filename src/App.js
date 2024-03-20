@@ -13,13 +13,9 @@ import Authentication from './routes/authentication/authentication';
 import Shop from './routes/shop/shop';
 import Checkout from './routes/checkout/checkout';
 import { setCurrentUser } from './store/user/user.action';
-import { selectIsCartOpen } from './store/cart/cart.selector';
 
 const App = () => {
   const dispatch = useDispatch();
-  const isCartOpen = useSelector(selectIsCartOpen);
-
-  console.log(isCartOpen);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChangeListener((user) => {
