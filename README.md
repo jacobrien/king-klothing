@@ -42,12 +42,16 @@
 
 ### Built With
 
-* [![React][React.js]](React-url)
-* [![Redux][Redux.js.org]](redux.js.org)
-* [![Firebase][firebase-url]](firebase.com)
-* ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) (Coming Soon)
-* ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) (Coming Soon)
-* [Stripe Payment](https://stripe.com/) (Coming Soon)
+[![React][React.js]](React-url)
+[![Redux][Redux.js.org]](redux.js.org)
+[![Firebase][firebase-url]](firebase.com)
+
+<p>Coming Soon</p>
+
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)</br>
+[Stripe Payment](<https://stripe.com/>)
 
 ### Title
 
