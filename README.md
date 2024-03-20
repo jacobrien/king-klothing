@@ -40,6 +40,14 @@
 
 [![Product][product-screenshot]](https://i.ibb.co/b5Pq078/king-klothing.png)
 
+### Built With
+
+* [![React][React.js]](React-url)
+* [![Redux][Redux.js.org]](redux.js.org)
+* [![Firebase][firebase-url]](firebase.com)
+* ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
+* [Stripe Payment](https://stripe.com/)
+
 ### Title
 
 E-commerce Site Portfolio Project Summary
@@ -69,16 +77,6 @@ Optimize performance and scalability through serverless architecture.</n>
 Implement clean and maintainable codebase following best practices.</n>
 Provide documentation and testing for smooth deployment and future maintenance.</n>
 By combining these technologies and features, the project aims to showcase proficiency in building robust and scalable e-commerce solutions, demonstrating expertise in frontend development, state management, authentication, database management, payment processing, and styling.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Built With
-
-* [![React][React.js]](React-url)
-* [![Redux][Redux.js.org]](redux.js.org)
-* [![Firebase][firebase-url]](firebase.com)
-* ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
-* [Stripe Payment](https://stripe.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
