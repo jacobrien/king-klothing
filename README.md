@@ -45,8 +45,9 @@
 * [![React][React.js]](React-url)
 * [![Redux][Redux.js.org]](redux.js.org)
 * [![Firebase][firebase-url]](firebase.com)
-* ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
-* [Stripe Payment](https://stripe.com/)
+* ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) (Coming Soon)
+* ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) (Coming Soon)
+* [Stripe Payment](https://stripe.com/) (Coming Soon)
 
 ### Title
 
@@ -58,16 +59,14 @@ The project aims to develop a fully functional e-commerce website utilizing mode
 
 ### Key Features
 
-* User Authentication: Utilizing Firebase Authentication for secure user registration, login, and authentication functionalities.
-* Product Catalog: Displaying a diverse range of products with details such as name, description, price, and images.
-* Shopping Cart: Implementing a responsive shopping cart that allows users to add, remove, and update items before proceeding to checkout.
-* Checkout Process: Integrating Stripe Payments to securely process transactions, including credit/debit card payments.
-* Order Management: Managing user orders and providing order history for users to track their purchases.
-* Responsive Design: Ensuring a seamless user experience across different devices and screen sizes.
-* State Management: Utilizing Redux for efficient state management, ensuring a predictable state container for the application.
-* Database Management: Leveraging Firebase Realtime Database or Firestore to store product information, user data, and order details.
-* Serverless Architecture: Employing serverless functions for backend operations such as handling payments, sending order confirmations, and managing user sessions.
-* Styling with SASS: Implementing a modular and scalable styling approach using SASS to enhance the visual appeal of the website.
+* <b>User Authentication</b>: Utilizing Firebase Authentication for secure user registration, and login
+* <b>Product Catalog</b>: Displaying a diverse range of products with details.
+* <b>Shopping Cart</b>: Implementing a responsive shopping cart (add, remove, and update items)
+* <b>Checkout Process</b>: Integrating Stripe Payments to securely process transactions
+* <b>State Management</b>: Utilizing Redux for efficient state management
+* <b>Database Management</b>: Leveraging Firebase Realtime Database (Firestore - NoSQL)
+* <b>Serverless Architecture</b>: Employing serverless functions for backend operations
+* <b>Styling</b>: Implementing a modular and scalable styling approach (SASS, Styled Components, etc)
 
 ### Project Goals
 
@@ -88,8 +87,10 @@ By combining these technologies and features, the project aims to showcase profi
 * [x] Database
 * [x] Authentication
 * [x] Redux
-* [ ] Serverless
 * [ ] Stripe
+* [ ] Node.js
+* [ ] AWS Serverless
+* [ ] Testing (Jest)
 * [ ] ???
   
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
