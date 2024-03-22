@@ -16,6 +16,16 @@ a {
   color: black;
 }
 
+.companyName {
+  height: 65px;
+  display: inline-flex;
+  font-family: "Splash", cursive;
+  font-weight: 400;
+  font-style: normal;
+  vertical-align: middle;
+  font-size: 30px;
+}
+
 * {
   box-sizing: border-box;
 }

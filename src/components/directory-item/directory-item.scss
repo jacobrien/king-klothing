@@ -53,14 +53,24 @@
     opacity: 0.7;
     position: absolute;
 
+    &.large {
+      min-width: 30%;
+    }
+
     h2 {
       font-weight: bold;
-      margin: 0 6px 0;
+      margin: 5px;
       font-size: 22px;
       color: #4a4a4a;
+
+      &.icon {
+        opacity: 60%
+      }
     }
 
     p {
+      height: 20px;
+      width: 20px;
       font-size: 16px;
     }
   }

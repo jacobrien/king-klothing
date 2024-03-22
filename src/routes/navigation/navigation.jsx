@@ -17,9 +17,12 @@ const Navigation = () => {
   return (
     <Fragment>
       <div className="navigation">
-        <Link className="logo-container" to="/">
-          <CrwnLogo className="logo" />
-        </Link>
+        <div>
+          <Link className="logo-container" to="/">
+            <CrwnLogo className="logo" />
+          </Link>
+          <Link className="companyName" to="/">King Klothing</Link>
+        </div>
         <div className="nav-links-container">
           <Link className="nav-link" to="/shop">
             SHOP
