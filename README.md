@@ -20,25 +20,26 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 [![Product][product-screenshot]](https://i.ibb.co/b5Pq078/king-klothing.png)
 </br>
 
-* [Visit Site](https://spontaneous-pony-201652.netlify.app/)
+- [Visit Site](https://spontaneous-pony-201652.netlify.app/)
 
 ### Built With
 
 [![React][React.js]](React-url)
 [![Redux][Redux.js.org]](redux.js.org)
 [![Firebase][firebase-url]](firebase.com)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+[Stripe Payment](https://stripe.com/)
 
 <p>Coming Soon</p>
 
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)</br>
-[Stripe Payment](<https://stripe.com/>)
 
 ### Title
 
@@ -50,14 +51,14 @@ The project aims to develop a fully functional e-commerce website utilizing mode
 
 ### Key Features
 
-* <b>User Authentication</b>: Utilizing Firebase Authentication for secure user registration, and login
-* <b>Product Catalog</b>: Displaying a diverse range of products with details.
-* <b>Shopping Cart</b>: Implementing a responsive shopping cart (add, remove, and update items)
-* <b>Checkout Process</b>: Integrating Stripe Payments to securely process transactions
-* <b>State Management</b>: Utilizing Redux for efficient state management
-* <b>Database Management</b>: Leveraging Firebase Realtime Database (Firestore - NoSQL)
-* <b>Serverless Architecture</b>: Employing serverless functions for backend operations
-* <b>Styling</b>: Implementing a modular and scalable styling approach (SASS, Styled Components, etc)
+- <b>User Authentication</b>: Utilizing Firebase Authentication for secure user registration, and login
+- <b>Product Catalog</b>: Displaying a diverse range of products with details.
+- <b>Shopping Cart</b>: Implementing a responsive shopping cart (add, remove, and update items)
+- <b>Checkout Process</b>: Integrating Stripe Payments to securely process transactions
+- <b>State Management</b>: Utilizing Redux for efficient state management
+- <b>Database Management</b>: Leveraging Firebase Realtime Database (Firestore - NoSQL)
+- <b>Serverless Architecture</b>: Employing serverless functions for backend operations
+- <b>Styling</b>: Implementing a modular and scalable styling approach (SASS, Styled Components, etc)
 
 ### Project Goals
 
@@ -71,24 +72,26 @@ By combining these technologies and features, the project aims to showcase profi
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
+
 ## Roadmap
 
-* [x] React App
-* [x] SASS
-* [x] Database (NoSQL)
-* [x] Authentication (Google)
-* [x] Redux
-* [ ] Stripe
-* [ ] Node.js
-* [ ] Serverless (AWS)
-* [ ] Testing (Jest)
-* [ ] ???
-  
+- [x] React App
+- [x] SASS
+- [x] Database (NoSQL)
+- [x] Authentication (Google)
+- [x] Redux
+- [x] Stripe
+- [x] Node.js
+- [x] Serverless (AWS)
+- [ ] Testing (Jest)
+- [ ] ???
+
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
@@ -97,6 +100,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: https://i.ibb.co/b5Pq078/king-klothing.png

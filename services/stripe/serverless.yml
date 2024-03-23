@@ -1,0 +1,44 @@
+service: stripe
+frameworkVersion: '3'
+provider:
+  name: aws
+  region: us-east-1
+  runtime: nodejs18.x
+  memorySize: 2000
+  timeout: 10
+  stage: dev
+  environment:
+    stripeSecretKey: ${ssm:/king/${self:provider.stage}/stripe/secretKey, ''}
+plugins:
+  - serverless-add-api-key
+custom:
+  apiKeys:
+    - name: dev-free-account
+      usagePlan:
+        name: 'Free Plan'
+        description: 'Free plan allows only limited requests'
+        quota:
+          limit: 5
+          period: DAY
+        throttle:
+          burstLimit: 100
+          rateLimit: 10
+functions:
+  createPaymentIntent:
+    handler: createPaymentIntent.handler
+    events:
+      - http:
+          path: /stripe
+          method: post
+          private: true
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+              - X-Amzn-Trace-Id
+            allowCredentials: true
