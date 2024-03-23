@@ -35,7 +35,8 @@
 [![Firebase][firebase-url]](firebase.com)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
-[Stripe Payment](https://stripe.com/)
+<br>
+[Stripe Payment Processing](https://stripe.com/)
 
 <p>Coming Soon</p>
 

@@ -1,20 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { FaRedhat } from 'react-icons/fa';
-import { GiMonclerJacket, GiConverseShoe } from 'react-icons/gi';
 import './directory-item.scss';
-
-const getIcon = (title) => {
-  switch (title) {
-    case 'hats':
-      return <FaRedhat />;
-    case 'jackets':
-      return <GiMonclerJacket />;
-    case 'sneakers':
-      return <GiConverseShoe />;
-    default:
-      return <span></span>;
-  }
-};
 
 const getH2Style = (title) => {
   switch (title) {
@@ -33,7 +18,7 @@ const DirectoryItem = ({ category }) => {
 
   const onNavigateHandler = () => navigate(route);
 
-  const icon = getIcon(title);
+  // const icon = getIcon(title);
   const h2Style = getH2Style(title);
 
   return (
@@ -46,7 +31,6 @@ const DirectoryItem = ({ category }) => {
       />
       <div className={`body ${h2Style}`}>
         <h2>{title.toUpperCase()}</h2>
-        <h2 className="icon">{icon}</h2>
       </div>
     </div>
   );
