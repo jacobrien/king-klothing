@@ -23,7 +23,7 @@
 
 ## About The Project
 
-[![Product][product-screenshot]](https://i.ibb.co/b5Pq078/king-klothing.png)
+![Product](https://i.ibb.co/pPXH8QT/Screenshot-2024-03-26-at-10-50-23-AM.png)
 </br>
 
 - [Visit Site](https://spontaneous-pony-201652.netlify.app/)
@@ -104,7 +104,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: https://i.ibb.co/b5Pq078/king-klothing.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [redux.js.org]: https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white
 [firebase-url]: https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase
