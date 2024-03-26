@@ -1,11 +1,13 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import {
-  signInWithGooglePopup,
-  signInAuthUserWithEmailAndPassword,
-} from '../../utils/firebase/firebase.utils';
+
 import FormInput from '../form-input/form-input';
 import Button from '../button/button';
+import {
+  googleSignInStart,
+  emailSignInStart,
+} from '../../store/user/user.action';
 
 import './sign-in-form.scss';
 
@@ -15,12 +17,13 @@ const defaultFormFields = {
 };
 
 function SignInForm() {
+  const dispatch = useDispatch();
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { email, password } = formFields;
   const navigate = useNavigate();
 
   const signInWithGoogle = async () => {
-    await signInWithGooglePopup();
+    dispatch(googleSignInStart());
     navigate('/');
   };
 
@@ -37,19 +40,11 @@ function SignInForm() {
     event.preventDefault();
 
     try {
-      await signInAuthUserWithEmailAndPassword(email, password);
+      dispatch(emailSignInStart(email, password));
       resetFormFields();
+      navigate('/');
     } catch (err) {
-      switch (err.code) {
-        case 'auth/wrong-password':
-          alert('Incorrect Password');
-          break;
-        case 'auth/user-not-found':
-          alert('User Not Found');
-          break;
-        default:
-          console.log(err);
-      }
+      console.log('user sign in failed', err);
     }
   };
 

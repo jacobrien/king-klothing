@@ -1,18 +1,21 @@
 import { Fragment } from 'react';
 import { Outlet, Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { ReactComponent as CrwnLogo } from '../../assets/crown.svg';
-import { signOutUser } from '../../utils/firebase/firebase.utils';
 import CartIcon from '../../components/cart-icon/cart-icon';
 import CartDropdown from '../../components/cart-dropdown/cart-dropdown';
 import { selectCurrentUser } from '../../store/user/user.selector';
 import { selectIsCartOpen } from '../../store/cart/cart.selector';
+import { signOutStart } from '../../store/user/user.action';
 
 import './navigation.scss';
 
 const Navigation = () => {
+  const dispatch = useDispatch();
   const currentUser = useSelector(selectCurrentUser);
   const isCartOpen = useSelector(selectIsCartOpen);
+
+  const signOutUser = () => dispatch(signOutStart());
 
   return (
     <Fragment>
@@ -21,7 +24,9 @@ const Navigation = () => {
           <Link className="logo-container" to="/">
             <CrwnLogo className="logo" />
           </Link>
-          <Link className="companyName" to="/">King Klothing</Link>
+          <Link className="companyName" to="/">
+            King Klothing
+          </Link>
         </div>
         <div className="nav-links-container">
           <Link className="nav-link" to="/shop">

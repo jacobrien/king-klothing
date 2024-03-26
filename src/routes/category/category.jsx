@@ -5,7 +5,7 @@ import ProductCard from '../../components/product-card/product-card';
 import {
   selectCategoriesMap,
   selectCategoriesIsLoading,
-} from '../../store/categories/categories.selector';
+} from '../../store/categories/category.selector';
 import Spinner from '../../components/spinner/spinner';
 
 import './category.scss';
