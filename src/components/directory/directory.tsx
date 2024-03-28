@@ -2,7 +2,14 @@ import DirectoryItem from '../directory-item/directory-item';
 
 import './directory.scss';
 
-const CATEGORIES = [
+export type DirectoryCategory = {
+  id: number;
+  title: string;
+  imageUrl: string;
+  route: string;
+};
+
+const CATEGORIES: DirectoryCategory[] = [
   {
     id: 1,
     title: 'hats',

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, FormEvent } from 'react';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import { useSelector } from 'react-redux';
 
@@ -20,7 +20,7 @@ const PaymentForm = () => {
   const currentUser = useSelector(selectCurrentUser);
   const [isProcessingPayment, setIsProcessingPayment] = useState(false);
 
-  const paymentHandler = async (e) => {
+  const paymentHandler = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!stripe || !elements) return;
     setIsProcessingPayment(true);
@@ -43,9 +43,13 @@ const PaymentForm = () => {
       paymentIntent: { client_secret },
     } = response;
 
+    const cardDetails = elements.getElement(CardElement);
+
+    if (cardDetails === null) return;
+
     const paymentResult = await stripe.confirmCardPayment(client_secret, {
       payment_method: {
-        card: elements.getElement(CardElement),
+        card: cardDetails,
         billing_details: {
           name: currentUser ? currentUser.displayName : 'Guest',
         },
@@ -65,7 +69,7 @@ const PaymentForm = () => {
 
   return (
     <div className="payment-form-container">
-      <div className="form-container">
+      <form className="form-container" onSubmit={paymentHandler}>
         <h2>Credit Card Payment:</h2>
         <h3>Test Card: 4242 4242 4242 4242</h3>
         <div className="card-element">
@@ -77,14 +81,10 @@ const PaymentForm = () => {
           <FaCcAmex size={50} />
           <FaCcDiscover size={50} />
         </div>
-        <Button
-          buttontype="inverted"
-          onClick={paymentHandler}
-          isLoading={isProcessingPayment}
-        >
+        <Button buttontype="inverted" isLoading={isProcessingPayment}>
           Pay Now
         </Button>
-      </div>
+      </form>
     </div>
   );
 };

@@ -1,5 +1,5 @@
-import { useDispatch } from 'react-redux';
-import { useSelector } from 'react-redux';
+import { FC } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import {
   addItemToCart,
   subtractItemFromCart,
@@ -7,19 +7,24 @@ import {
 } from '../../store/cart/cart.actions';
 import './checkout-item.scss';
 import { selectCartItems } from '../../store/cart/cart.selector';
+import { CartItem } from '../../store/cart/cart.types';
 
-const CheckoutItem = ({ cartItem }) => {
+type CheckoutItemProps = {
+  cartItem: CartItem;
+};
+
+const CheckoutItem: FC<CheckoutItemProps> = ({ cartItem }) => {
   const { name, imageUrl, price, quantity } = cartItem;
   const cartItems = useSelector(selectCartItems);
   const dispatch = useDispatch();
 
-  const addHandler = (item) => {
+  const addHandler = () => {
     dispatch(addItemToCart(cartItems, cartItem));
   };
-  const subtractHandler = (item) => {
+  const subtractHandler = () => {
     dispatch(subtractItemFromCart(cartItems, cartItem));
   };
-  const removeHandler = (item) => {
+  const removeHandler = () => {
     dispatch(removeItemFromCart(cartItems, cartItem));
   };
 

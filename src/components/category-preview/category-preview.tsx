@@ -1,9 +1,16 @@
+import { FC } from 'react';
 import { Link } from 'react-router-dom';
-import ProductCard from '../../components/product-card/product-card';
+import ProductCard from '../product-card/product-card';
+import { CategoryItem } from '../../store/categories/category.types';
 
 import './category-preview.scss';
 
-const CategoryPreview = ({ title, products }) => {
+type CategoryPreviewProps = {
+  title: string;
+  products: CategoryItem[];
+};
+
+const CategoryPreview: FC<CategoryPreviewProps> = ({ title, products }) => {
   return (
     <div className="category-preview-container">
       <h2>
