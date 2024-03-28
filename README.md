@@ -30,6 +30,7 @@
 
 ### Built With
 
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 [![React][React.js]](React-url)
 [![Redux][Redux.js.org]](redux.js.org)
 [![Firebase][firebase-url]](firebase.com)
